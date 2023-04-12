@@ -1,6 +1,9 @@
 const notes = require('express').Router();
-const { v4: uuidv4 } = require('../helpers/uuiduuid');
+const { v4: uuidv4 } = require('../helpers/uuid');
 const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
+const fs = require('fs/promises');
+
+module.exports = notes;
 
 notes.get('/', (req, res) => {
     console.info(`${req.method} request received for notes`);
