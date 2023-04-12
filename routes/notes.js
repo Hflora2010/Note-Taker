@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { v4: uuidv4 } = require('../helpers/uuid').default;
+const { v4: uuidv4 } = require('../helpers/uuid');
 const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 const fs = require('fs/promises');
 
@@ -14,7 +14,7 @@ notes.get('/', (req, res) => {
 notes.get('/:id', async (req, res) => {
     const id = req.params.id;
     try {
-        const data = await fs?.readFromFile('./db/db.json');
+        const data = await readFromFile('./db/db.json');
         const notes = JSON.parse(data);
         const matchingNote = notes.filter(note => note.id === id);
         if(!matchingNote) {
