@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { v4: uuidv4 } = require('../helpers/uuid');
+const { v4: uuidv4 } = require('../helpers/uuid').default;
 const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 const fs = require('fs/promises');
 
@@ -30,14 +30,14 @@ notes.get('/:id', async (req, res) => {
 notes.post('/', (req, res) => {
  console.info(`${req.method} request received to post note`);
 
- const { title, text, id } = req.body;
-
- if (title && text && id) {
-    const newNote = {
-        title, 
-        text, 
-        id: uuidv4(),
-    };
+ const { title, text } = req.body;
+ 
+ if (title && text) {
+     const newNote = {
+         title, 
+         text, 
+         id: uuidv4(),
+        };
 
     readAndAppend(newNote, './db/db.json');
 
