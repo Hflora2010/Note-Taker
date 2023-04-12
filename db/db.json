@@ -1,8 +1,17 @@
 [
-
     {
-        "title": "Wednesday",
-        "text": "clean room",
-        "id": "40ab"
+        "title": "Monday",
+        "text": "Clean House",
+        "id": "2042"
+    },
+    {
+        "title": "Tuesday",
+        "text": "Clean Car",
+        "id": "6979"
+    },
+    {
+        "title": "Wednesday ",
+        "text": "Wash car",
+        "id": "d100"
     }
 ]
