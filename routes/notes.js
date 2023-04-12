@@ -14,7 +14,7 @@ notes.get('/', (req, res) => {
 notes.get('/:id', async (req, res) => {
     const id = req.params.id;
     try {
-        const data = await readFromFile('./db/db.json');
+        const data = await fs?.readFromFile('./db/db.json');
         const notes = JSON.parse(data);
         const matchingNote = notes.filter(note => note.id === id);
         if(!matchingNote) {
@@ -32,7 +32,7 @@ notes.post('/', (req, res) => {
 
  const { title, text, id } = req.body;
 
- if (title, text, id) {
+ if (title && text && id) {
     const newNote = {
         title, 
         text, 
