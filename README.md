@@ -1,7 +1,5 @@
 # Note Taker Application
 
-# Weather Dashboard
-
 ## Description
 This is a Note Take Application. It can be used to write and save notes so people can organize and keep track of tasks to complete. This application can be used for for things such as day to day tasks. 
 
@@ -33,7 +31,7 @@ Code was built out with the help of: <br>
 
 Uconn Tutor: Brandon Leek <br>
 Studygroup Helpers: Matthew Caschetto and Kevin Molyneaux<br>
-Uconn Express Module: Lesson 22: Modular Routing <br>
+Uconn Express Module: Lesson 22: Modular Routing
 
 
 Reference Pages: <br>
