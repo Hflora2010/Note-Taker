@@ -29,6 +29,9 @@ Below is a screenshot of the screen you will see when clicking the 'Get Started'
 
 Code was built out with the help of: <br> 
 
+Starter Code provided by: Xander Rapstine, John mcCambridge and George. This code can be found at: <a href="https://github.com/coding-boot-camp/miniature-eureka">Starter Code</a><br><br>
+
+Also with the help of:<br>
 Uconn Tutor: Brandon Leek <br>
 Studygroup Helpers: Matthew Caschetto and Kevin Molyneaux<br>
 Uconn Express Module: Lesson 22: Modular Routing
