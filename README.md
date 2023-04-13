@@ -33,7 +33,7 @@ Code was built out with the help of: <br>
 
 Uconn Tutor: Brandon Leek <br>
 Studygroup Helpers: Matthew Caschetto and Kevin Molyneaux<br>
-Uconn Express Module: Lesson 22: Modular Routing
+Uconn Express Module: Lesson 22: Modular Routing <br>
 
 
 Reference Pages: <br>
